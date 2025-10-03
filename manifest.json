@@ -14,5 +14,10 @@
   },
   "permissions": [
     "storage"
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "todolist@example.com"
+    }
+  }
 }
