@@ -1,0 +1,100 @@
+/* General Body Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  width: 350px;
+  padding: 15px;
+  background-color: #f4f7f9;
+  color: #333;
+}
+
+/* App Container */
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-top: 0;
+  color: #2c3e50;
+  font-size: 24px;
+}
+
+/* Input Field */
+#task-input {
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  width: 100%;
+}
+
+#task-input:focus {
+  outline: none;
+  border-color: #409eff;
+}
+
+/* Add Button */
+#add-task {
+  background-color: #409eff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+#add-task:hover {
+  background-color: #66b1ff;
+}
+
+/* Task List */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e4e7ed;
+  transition: background-color 0.2s;
+}
+
+li:hover {
+  background-color: #ecf5ff;
+}
+
+li span {
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+/* Completed Task Style */
+li.completed span {
+  text-decoration: line-through;
+  color: #909399;
+}
+
+/* Delete Button */
+li .delete {
+  color: #f56c6c;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+  flex-shrink: 0; /* Prevents the delete button from shrinking */
+  transition: color 0.3s;
+}
+
+li .delete:hover {
+  color: #f78989;
+}
